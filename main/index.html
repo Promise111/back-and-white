@@ -12,6 +12,18 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  
+<script type="text/javascript">
+function myFunction() {
+  let body = document.getElementsByTagName('body');
+  for(let i = 0; i < body.length; i++){
+    if ( body[i].style.backgroundColor != 'whitesmoke')
+    body[i].style.backgroundColor = 'whitesmoke';
+    else
+    body[i].style.backgroundColor = 'hsl(230, 17%, 14%)';
+  }
+}
+</script>
 </head>
 <body>
 <div class="head">
@@ -21,15 +33,16 @@
     </div>
  <p class="dark"> Dark Mode
   <label class="switch">
-    <input type="checkbox" id="check">
+    <input type="checkbox" id="check" onchange="myFunction()">
     <span class="slider round"></span>
   </label>
   </p> 
 
 </div>
-  <div id="section">
-<div class="sec1" id="section">
-  <p class="blue"> <img src="images/icon-facebook.svg" alt=""> @nathanf</p> <br>
+<div id="section">
+
+<div class="sec1">
+<p class="blue"> <img src="images/icon-facebook.svg" alt=""> @nathanf</p> <br>
 <p class="numbs"> 1987</p>
 <p class="tag">Followers</p><br>
 <p class="up">  <img src="images/icon-up.svg" alt=""> 12 Today</p>
@@ -53,6 +66,7 @@
 <p class="tag">  Subscribers</p><br>
 <p class="down" > <img src="images/icon-down.svg" alt=""> 144 Today</p>
 </div>
+
 </div>
 
  <h3>Overview - Today</h3> 
@@ -140,17 +154,13 @@
        </div>
   </div>
 </div>
-  <div class="attribution">
+<!-- Changed from div to footer -->
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Amarachi</a>.
-  </div>
+  </footer>
+<!-- footer ends -->
 </body>
-<script>
-function myFunction() {
-   var element = document.getElementById("");
-   element.classList.toggle("black");
-} 
- </script>
 </html>
 
 

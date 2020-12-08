@@ -5,6 +5,7 @@
 }
 body{
     background-color: 	hsl(230, 17%, 14%);
+    /* background-color: whitesmoke; */
     font-family: sans-serif;
     margin-left: 10rem;
     position: center;
@@ -215,3 +216,16 @@ h3{
    
      }
     }
+
+/* Promise included */
+/* .attribution{
+    margin-top:20px;
+} */
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin-top:20px;
+    font-size: large !important;
+  }
